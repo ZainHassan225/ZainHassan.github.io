@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	align-items: center;
+	background-color: black;
+	height: 50px;
+	padding: 10px 0px 20px 40px;
+}
+header h1 {
+		display: inline;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400px;
+		font-size: 35px;
+		float: left;
+		margin-top: 18px;
+		margin-right: 0px;
+		padding: 0px 40px 10px 8px;
+    	color: white;
+}
+nav ul {
+	display: inline;
+	padding: 12px;
+	float: left;
+}
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	color: white;
+	float: left;
+	margin: 10px;
+
+}
+nav ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+ 	font-family: 'Roboto', sans-serif;
+}
+.homered {
+	background-color: rgb(255, 0, 0);
+	padding: 55px 10px 13px 10px;
+}
+.homeblack:hover {
+	background-color: #25599588;
+	padding: 55px 10px 13px 10px;
+}
+.divider {
+	background-color: rgb(255, 0, 0);
+	height: 8px;
+}
+div input {
+	float: right;
+	margin: 15px;
+	width: 120px;
+	height: 35px;
+	border-radius: 50px;
+	transition: 0.4s;
+	outline: none;
+	border: none;
+	font-family: 'Roboto', sans-serif; 
+	color: rgb(0, 0, 0);
+	transition: 0.4s;
+	opacity: 80%;
+}
+div input:hover {
+	opacity: 90%;
+}
+div input:focus {
+	float: right;
+	margin: 15px;
+	width: 200px;
+	height: 35px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	font-family: 'Roboto', sans-serif; 
+	color: rgb(0, 0, 0);
+	opacity: 100%;
+	padding-left: 10px;
+}
+.account {
+	width: 3.5%;
+	float: right;
+	margin: 13px;
+	opacity: 80%;
+}
+.account:hover {
+	opacity: 100%;
+}
+.icons1 {
+	width: 3%;
+	float: right;
+	margin: 15px;
+	opacity: 80%;
+}
+.icons1:hover {
+	opacity: 100;
+}
+.icons2 {
+	width: 3%;
+	float: right;
+	margin: 15px;
+	opacity: 80%;
+}
+.icons2:hover {
+	opacity: 100;
+}
+.icons3 {
+	width: 4%;
+	float: right;
+	margin: 10px;
+	opacity: 80%;
+}
+.icons3:hover {
+	opacity: 100;
+}
+.fwimage1 {
+	background-image:  url(images/mainbg3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1263px;
+	height: 820px;
+	margin: 0;
+	padding: 0;
+}
+.subline {
+	font-family: 'Raleway', sans-serif;
+	color: yellow;
+	margin: 0;
+	padding: 25% 8% 0% 50%;
+}
+.des {
+	font-family: 'Raleway', sans-serif;
+	margin: 0.5% 0% 0% 50%;
+	font-size: 75px;
+	color: yellow;
+	background-color: rgba(0,0,0,0.4);
+	display: inline-block;
+}
+.pho {
+	width: 0ch;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: text 6s steps(14) infinite alternate;
+	border-right: 3px solid yellow;
+	font-family: 'Oswald', sans-serif;
+	margin: 0% 0% 0% 50%;
+	font-size: 64px;
+	color: white;
+	display: inline-block;
+}
+@keyframes text{
+	0%{width: 0ch;}
+	50%{width: 14ch;}
+}
+.homebut {
+	background-color: yellow;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif; 
+	margin: 0% 0% 0% 50%;
+	border: none;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	padding: 0.1px;
+	font-size: 25px;
+	color: black;	
+}
+.homebut:hover {
+	background: none;
+	transition: 1s;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border-width: 3px;
+	border-color: yellow;
+	border-style: solid;
+}
+.homebut2 {
+	background-color: yellow;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif; 
+	margin: 0% 0% 0% 0%;
+	border: none;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	padding: 0.1px;
+	font-size: 25px;
+	color: black;	
+}
+.homebut2:hover {
+	background: none;
+	transition: 0.5s;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border-width: 3px;
+	border-color: yellow;
+	border-style: solid;
+
+}
+
+.login-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1099;
+	background-color:rgba(0,0,0,0.6);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s ease;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup.show{
+	visibility:visible;
+	opacity: 1;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box{
+	background-color:#ffffff;
+	width: 750px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	display: flex;
+	flex-wrap: wrap;
+	opacity: 0;
+	margin-left: 50px;
+	transition: all 1s ease;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+
+}
+.login-popup.show .box{
+	opacity: 1;
+	margin-left: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .img-area{
+	flex:0 0 50%;
+	max-width: 50%;
+	position: relative;
+	overflow: hidden;
+	padding:30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .img-area h1{
+	font-size: 30px;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .img-area .img{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-image: url('img/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	animation: zoomInOut 7s linear infinite;
+	z-index: -1;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+
+}
+@keyframes zoomInOut{
+	0%,100%{
+		transform: scale(1);
+		line-height: 1.5;
+		box-sizing: border-box;
+		margin:0;
+	}
+	50%{
+		transform: scale(1.1);
+		line-height: 1.5;
+		box-sizing: border-box;
+		margin:0;
+	}
+}
+.login-popup .box .form{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding:40px 30px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+
+.login-popup .box .form h1{
+	color:#000000;
+	font-size: 30px;
+	margin:0 0 30px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .form .form-control{
+	height: 45px;
+	margin-bottom: 30px;
+	width: 100%;
+	border:none;
+	border-bottom:1px solid #cccccc;
+	font-size: 15px;
+	color:#000000;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .form .form-control:focus{
+	outline: none;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .form label{
+	font-size: 15px;
+	color:#ff0000;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .form .btn{
+	width: 100%;
+	background-color: #E91E63;
+	margin-top:40px;
+	height: 45px;
+	border:none;
+	border-radius: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color:#ffffff;
+	cursor: pointer;
+	font-family: sans-serif;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+.login-popup .box .form .btn:focus{
+	outline: none;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0;
+}
+
+.login-popup .box .form .close{
+	position: absolute;
+	right: 10px;
+	top:0px;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 1.5;
+	box-sizing: border-box;
+	margin:0
+}
+
+/*responsive*/
+@media(max-width: 767px){
+	.login-popup .box{
+		width: calc(100% - 30px);
+		line-height: 1.5;
+		box-sizing: border-box;
+		margin:0;
+	}
+	.login-popup .box .img-area{
+		display: none;
+		line-height: 1.5;
+		box-sizing: border-box;
+		margin:0;
+	}
+	.login-popup .box .form{
+		flex: 0 0 100%;
+		max-width: 100%;
+		line-height: 1.5;
+		box-sizing: border-box;
+		margin:0
+}
